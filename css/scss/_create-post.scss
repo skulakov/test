@@ -1,0 +1,17 @@
+.create-post {
+
+  form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    input[type="submit"] {
+      width: 50%;
+    }
+  }
+@media all and (max-width: 768px) {
+.forms{
+    margin-top: 1rem;
+}
+}
+}

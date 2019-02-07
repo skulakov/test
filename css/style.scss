@@ -1,0 +1,38 @@
+$btn-def: #000000;
+$btn-act: #4d4d4d;
+$btn-color: #ffffff;
+$color-red: red;
+$color-l-red: #d7453c;
+$color-blue: blue;
+$color-l-blue: #5050FF;
+$color-green: #007a00;
+$color-l-green: #249027;
+$color-yellow: #e99900;
+$color-l-yellow: #eeac00;
+$color-black: black;
+$color-white: white;
+$color-gray: #4d4d4d;
+$color-l-gray: (#7b7b7b - 2);
+
+
+
+$fs: 16px;
+$small: calc(1rem - .0625rem);
+$brd-color: #dddddd;
+
+
+@import "scss/setting";
+@import "scss/header";
+@import "scss/banner";
+@import "scss/photos";
+@import "scss/description";
+@import "scss/social";
+@import "scss/articles";
+@import "scss/account";
+@import "scss/form";
+@import "scss/create-post";
+@import "scss/login";
+@import "scss/gallery";
+@import "scss/footer";
+
+

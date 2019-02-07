@@ -1,0 +1,61 @@
+form {
+  width: 100%;
+  font-size: 1rem;
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding: .4rem;
+    margin: .625rem 0;
+    //box-shadow: 2px 2px 2px $color-gray;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+  }
+
+  input[type="file"], input[type="submit"] {
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.link-form {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.create-post{
+  .forms {
+    max-width: 480px;
+    margin-top: 3rem;
+  }
+}
+.profile{
+  .forms {
+    max-width: 320px;
+    margin-top: 3rem;
+  }
+}
+.registry, .login,.remind  {
+  margin: 0 auto;
+  .row{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    margin: 3rem 0;
+  }
+  .forms {
+    max-width: 320px;
+  }
+
+}

@@ -1,0 +1,196 @@
+.account, .create-post, .profile {
+  padding: 2rem 0;
+
+  .add-post {
+    text-align: center;
+  }
+
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+    caption {
+      font-size: 1.5rem;
+      margin: .5rem 0 .75rem;
+    }
+
+    tr {
+      border: 1px solid #ddd;
+      padding: .35rem;
+    }
+
+    th,
+    td {
+      padding: .625rem;
+      text-align: center;
+
+    }
+    td{
+      &:first-child{
+        text-align: left;
+      }
+    }
+
+    th {
+      font-size: .85rem;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+    }
+
+  }
+
+  .left-column {
+    padding-left: 1.25rem;
+  }
+
+  .right-column {
+    padding-right: .625rem;
+
+    h3 {
+      margin: 1rem 0 2rem;
+    }
+  }
+
+  .left-nav {
+    margin: .625rem 0;
+  }
+
+  .open-aside, .close-aside {
+    display: none;
+  }
+
+  .title {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .user-profile {
+    display: block;
+    margin-top: .625rem;
+  }
+.user-info{
+color: $color-green;
+}
+  button.accordion.btn-default {
+    box-shadow: none;
+  }
+  @media all and (max-width: 1024px) {
+    .left-column {
+      width: 100%;
+      padding: 0;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .close-aside {
+      display: block;
+      margin: 1rem 1rem 2rem;
+      text-align: right;
+      font-size: 1.5rem;
+    }
+    .open-aside {
+      display: inline-block;
+      margin-bottom: 1rem;
+      margin-right: 1.5rem;
+      padding: .625rem;
+      background-color: $color-black;
+      font-size: 1.25rem;
+    }
+    .open-aside, .close-aside {
+      color: $color-white;
+      transition: color 400ms;
+
+      &:hover {
+        color: ($color-l-gray);
+        cursor: pointer;
+      }
+    }
+    .add-post {
+      display: block;
+      width: 100%;
+    }
+    .row {
+      position: relative;
+    }
+    .right-column {
+      width: 320px;
+      height: 100%;
+      display: none;
+      position: fixed;
+      padding: 0 .625rem;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      transition: opacity 600ms;
+      opacity: 0;
+      color: $color-white;
+    }
+    .right-column.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .panel {
+      color: $color-black;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    table {
+      border: 0;
+
+      caption {
+        font-size: 1.3rem;
+      }
+
+      thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        flex-wrap: wrap;
+        margin-bottom: .625em;
+      }
+
+      td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+
+        &:before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        &:first-child{
+          text-align: right;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+

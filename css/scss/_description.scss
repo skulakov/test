@@ -1,0 +1,29 @@
+.description {
+  min-width: 100%;
+  margin: 6rem auto;
+  padding: 3rem 0;
+  background-color: $btn-act;
+
+  p {
+    font-family: Arial, sans-serif;
+    color: $btn-color;
+  }
+}
+
+@media (max-width: 1024px) {
+  .description {
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    margin: 1.5rem auto;
+  }
+}

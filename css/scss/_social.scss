@@ -1,0 +1,45 @@
+.social,post {
+  margin: 3.25rem auto;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    .fa {
+      display: inline;
+      //width: 3rem;
+      padding: 1.25rem;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.5rem;
+      color: $btn-def;
+      &:hover{
+        background-color: $btn-def;
+        color: $btn-color;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .photos {
+    figure {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .social {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 480px) {
+  .social {
+    ul {
+      .fa {
+        width: 3rem;
+        padding: .8rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
